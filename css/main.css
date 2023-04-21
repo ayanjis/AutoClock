@@ -24,6 +24,7 @@ body {
   display: flex;
   border: 1px solid #fff;
   padding: .5rem;
+  width: 13.5rem;
   border-radius: 10px;
 }
 
