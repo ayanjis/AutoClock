@@ -1,0 +1,38 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.Container {
+  display: flex;
+  border: 1px solid #fff;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.Child {
+  margin: 0 .5rem;
+  display: flex;
+}
+
+.Minutes {
+  display: flex;
+  flex-direction: column;
+}
