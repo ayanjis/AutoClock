@@ -5,6 +5,9 @@ function updateTime() {
     let h = d.getHours()
     let m = d.getMinutes()
     let s = d.getSeconds()
+    let day = d.getDay()
+    let mont = d.getMonth()
+    // console.log(mont)
     
     if (h < 10) {
         h = `0${m}` 

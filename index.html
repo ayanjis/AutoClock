@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-      minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css/main.css">
-    <script type="module" src="js/main.js"></script>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1,
+      minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <script type="module" src="js/main.js"></script>
+    </head>
 
-  <body>
+    <body>
+        <div class="Container">
+            <div class="ChildContainer Time_Hours">
+                <div class="Time Hours" id="Hours">12</div>
+                <samp class="Text">Hours</samp>
+            </div>
 
-    <div class="Container">
-      <div class="Child Hours" id="Hours">12</div>
-      <div class="Child Colon">:</div>
-      <div class="Child Minutes" id="Minutes">55</div>
-      <div class="Child Colon">:</div>
-      <div class="Child Seconds" id="Seconds">60</div>
-    </div>
+            <div class="ChildContainer Time_Minutes">
+                <div class="Time Minutes" id="Minutes">55</div>
+                <samp class="Text">Minutes</samp>
+            </div>
 
-  </body>
+            <div class="ChildContainer Time_Seconds">
+                <div class="Time Seconds" id="Seconds">60</div>
+                <samp class="Text">Seconds</samp>
+            </div>
+        </div>
+    </body>
 </html>
