@@ -2,6 +2,16 @@ const $ = (id) => document.getElementById(id)
 const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug',  'Sept', 'Oct', 'Nov','Dec']
 
+let html = document.documentElement
+let isChecked = false
+document.body.addEventListener('click', () => {
+    if (document.fullscreenElement !== html.requestFullscreen()) {
+        html.requestFullscreen()
+    } else {
+        document.exitFullscreen()
+    }
+})
+
 function updateTime() {
     let d = new Date()
     let h = d.getHours()
@@ -16,7 +26,7 @@ function updateTime() {
     let newHours = h % 12
     let newDay = dayNames[day]
     let newMonth = monthNames[month]
-    let newDate = `${newDay},${newMonth} ${date},${twoDigitYear}`
+    let newDate = `${newDay},${newMonth} ${date},${twoDigitYear}` 
 
     if ( h === 24 || h === 12 ) {
         newHours = `12`
