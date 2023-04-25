@@ -4,7 +4,7 @@ const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug',  '
 
 let html = document.documentElement
 let isChecked = false
-document.body.addEventListener('click', () => {
+document.body.addEventListener('dblclick', () => {
     if (document.fullscreenElement !== html.requestFullscreen()) {
         html.requestFullscreen()
     } else {
