@@ -22,13 +22,14 @@ body {
     overscroll-behavior: contain;
 }
 
-.Container {
+.Clock {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     font-family: "Montserrat" "sans- serif";
     background: #000;
+    margin: 1rem;
     padding: 1rem;
     /* padding-top: 0; */
     width: 7rem;
